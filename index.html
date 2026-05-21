@@ -166,23 +166,57 @@
   .nav-home{background:transparent;border:1px solid rgba(255,255,255,.25);color:var(--gray);padding:.3rem .7rem;cursor:pointer;font-size:.75rem;transition:all .15s;border-radius:2px}
   .nav-home:hover{color:var(--white);border-color:var(--white)}
 
+
+ 
  .cover-credit{
   position:absolute;
   bottom:2.5rem;
   left:3rem;
-  font-size:.78rem;
-  color:var(--gray);
-  letter-spacing:2px;
-  line-height:1.8;
-  text-transform:uppercase;
   z-index:2;
+  max-width:520px;
+}
+
+.credit-line{
+  width:70px;
+  height:2px;
+  background:var(--gold);
+  margin-bottom:1rem;
+  opacity:.8;
+}
+
+.credit-label{
+  font-size:.68rem;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.45);
+  margin-bottom:.7rem;
+  font-weight:600;
+}
+
+.credit-names{
+  font-family:'Playfair Display',serif;
+  font-size:1.15rem;
+  color:var(--white);
+  margin-bottom:.45rem;
+  letter-spacing:.5px;
+}
+
+.credit-class{
+  font-size:.78rem;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.45);
 }
  
   @media(max-width:600px){
    .cover-credit{
   left:1.5rem;
   bottom:2rem;
-  font-size:.72rem;
+  max-width:90%;
+}
+
+.credit-names{
+  font-size:1rem;
 }
     #cover{padding:2.5rem 1.5rem}
     .cover-title{font-size:3rem}
@@ -207,7 +241,7 @@
     <h1 class="cover-title">LEX</h1>
     <h1 class="cover-title-sub">ET RATIO</h1>
     <div class="cover-divider"></div>
-    <p class="cover-desc">A doctrine-centered case analysis of all 76 Supreme Court cases assigned in JD 2206: Civil Procedure II. Swipe through every case — its key doctrine, why it matters, and its scope and limits.</p>
+    <p class="cover-desc">A doctrine-centered case analysis of all 76 Supreme Court cases. Swipe through every case for its key doctrine, why it matters, and its scope and limits.</p>
     <div class="cover-stats">
       <div><span class="cover-stat-num">76</span><span class="cover-stat-label">Cases</span></div>
       <div><span class="cover-stat-num">5</span><span class="cover-stat-label">Sections</span></div>
@@ -221,9 +255,20 @@
       <span class="section-pill pill-red" onclick="goToSection(4)">05 SCA Part 2</span>
     </div>
     <button class="start-btn" onclick="showTOC()">Browse all cases ›</button>
-   <div class="cover-credit">
-  PREPARED BY RIZALDY NISPEROS & ETHYL MAE VALDRIZ<br>
-  JD 2206 — CIVIL PROCEDURE II | SY 2025–2026
+  <div class="cover-credit">
+  <div class="credit-line"></div>
+
+  <div class="credit-label">
+    PREPARED BY: 
+  </div>
+
+  <div class="credit-names">
+    Rizaldy Nisperos & Ethyl Mae Valdriz
+  </div>
+
+  <div class="credit-class">
+    JD 2206 • Civil Procedure II • SY 2025–2026
+  </div>
 </div>
   </div>
 </div>
