@@ -462,7 +462,7 @@ function buildDeck(){
   });
   const sc=document.getElementById('section-complete');
   sc.classList.remove('active');
-  document.getElementById('sc-sub-text').textContent=`You've reviewed all ${ss.length} cases in ${s.title}.`;
+ document.getElementById('sc-sub-text').textContent=`You've reviewed all ${s.cases.length} cases in ${s.title}.`;
   const nextBtn=document.getElementById('sc-next-btn');
   if(currentSectionIdx<SECTIONS.length-1){
     nextBtn.style.display='inline-block';
